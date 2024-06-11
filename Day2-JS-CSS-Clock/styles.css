@@ -19,19 +19,45 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
-/*
+
 .mini-circle {
+  position: absolute;
+  left: calc(50% - 10px);
   width: 20px;
   height: 20px;
+  background-color: rgb(26, 25, 25);
   border-radius: 50%;
-  background-color: black;
-} */
+}
+/* Hours */
+.arrow-hours {
+  position: absolute;
+  left: calc(50% - 100px);
+  width: 100px;
+  height: 12px;
+  border-radius: 10px;
+  background-color: rgb(29, 28, 28);
+  transform-origin: left center;
+  animation: arrow 3643200s infinite normal;
+}
 
-.arrow {
+/* Minutes */
+.arrow-minutes {
   position: absolute;
   width: 150px;
   height: 10px;
+  border-radius: 10px;
   background-color: black;
+  transform-origin: right center;
+  animation: arrow 3600s steps(60) infinite normal;
+}
+
+/* Seconds */
+.arrow-seconds {
+  position: absolute;
+  width: 150px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: rgb(180, 12, 12);
   transform-origin: right center;
   animation: arrow 60s steps(60) infinite normal;
 }
