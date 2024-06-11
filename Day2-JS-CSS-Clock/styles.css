@@ -33,7 +33,7 @@ body {
   height: 10px;
   background-color: black;
   transform-origin: right center;
-  animation: arrow 6s infinite normal;
+  animation: arrow 60s steps(60) infinite normal;
 }
 
 @keyframes arrow {
