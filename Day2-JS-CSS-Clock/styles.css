@@ -1,0 +1,46 @@
+html {
+  background: #018ded url(https://unsplash.it/1500/1000?image=881&blur=5);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.circle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 20px white solid;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+/*
+.mini-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+} */
+
+.arrow {
+  position: absolute;
+  width: 150px;
+  height: 10px;
+  background-color: black;
+  transform-origin: right center;
+  animation: arrow 6s infinite normal;
+}
+
+@keyframes arrow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
