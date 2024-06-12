@@ -9,6 +9,13 @@ body {
   height: 100vh;
   margin: 0;
 }
+
+#digital-clock {
+  position: absolute;
+  bottom: 20%;
+  color: white;
+  font-size: 50px;
+}
 .circle {
   position: relative;
   width: 300px;
@@ -27,6 +34,9 @@ body {
   height: 20px;
   background-color: rgb(26, 25, 25);
   border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 /* Hours */
 .arrow-hours {
@@ -36,8 +46,9 @@ body {
   height: 12px;
   border-radius: 10px;
   background-color: rgb(29, 28, 28);
-  transform-origin: left center;
-  animation: arrow 3643200s infinite normal;
+  transform-origin: right center;
+  /* animation: arrow 43200s infinite normal; */
+  box-shadow: rgba(244, 242, 242, 0.15) 2.4px 2.4px 3.2px;
 }
 
 /* Minutes */
@@ -48,7 +59,8 @@ body {
   border-radius: 10px;
   background-color: black;
   transform-origin: right center;
-  animation: arrow 3600s steps(60) infinite normal;
+  /* animation: arrow 3600s steps(60) infinite normal; */
+  box-shadow: rgba(241, 241, 241, 0.15) 2.4px 2.4px 3.2px;
 }
 
 /* Seconds */
@@ -59,7 +71,8 @@ body {
   border-radius: 10px;
   background-color: rgb(180, 12, 12);
   transform-origin: right center;
-  animation: arrow 60s steps(60) infinite normal;
+  /* animation: arrow 60s steps(60) infinite normal; */
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 @keyframes arrow {
