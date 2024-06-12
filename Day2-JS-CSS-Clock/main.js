@@ -21,8 +21,6 @@ function digitalClock() {
   const hourDegrees = hours * 30 + minutes * 0.5 + seconds * 0.00833 + 90;
   const minuteDegrees = (minutes / 60) * 360 + 90;
   const secondDegrees = (seconds / 60) * 360 + 90;
-  console.log("hours", hours);
-  console.log("minutes", minutes);
 
   hourHand[0].style.transform = `rotate(${hourDegrees}deg)`;
   minuteHand[0].style.transform = `rotate(${minuteDegrees}deg)`;
